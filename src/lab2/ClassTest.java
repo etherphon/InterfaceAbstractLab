@@ -8,6 +8,13 @@ package lab2;
 /**
  *
  * @author etherdesign
+ * 
+ * This is the interface method design.  In this, all of the methods are defined
+ * in the superclass, but are not implemented until they are written in the subclasses,
+ * this is handy because it tells you exactly what you need to implement when you
+ * make a new subclass, but you have to provide bodies for all those methods in the
+ * subclasses even though they might be the same in all of them.
+ * 
  */
 public class ClassTest {
  

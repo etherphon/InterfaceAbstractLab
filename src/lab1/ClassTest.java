@@ -8,6 +8,12 @@ package lab1;
 /**
  *
  * @author etherdesign
+ * This is a test of the abstract class design, in this design most of the shared
+ * methods are defined and implemented in the superclass, it is handy that it is
+ * all in one place, but you don't know what methods your subclasses are inheriting
+ * unless you look at the superclass.
+ * 
+ * 
  */
 public class ClassTest {
     
