@@ -19,6 +19,15 @@ public class ClassTest {
     
     public static void main(String[] args) {
         
+        // polymorphism + object array, enhanced loop
+        ProgrammingCourse[] courses = {
+          new AdvancedJavaCourse(), new IntroJavaCourse(), new IntroToProgrammingCourse()
+        };
+        
+        for (ProgrammingCourse pc : courses) {
+            pc.getCourseName();
+        }
+        
         ProgrammingCourse introJava = new IntroJavaCourse("Intro to Java", "123456");
         introJava.setCredits(3.0);
         System.out.println(introJava.getCourseNumber());

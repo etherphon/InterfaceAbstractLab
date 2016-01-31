@@ -32,7 +32,11 @@ public abstract class ProgrammingCourse {
         
     }
     
-    public void setCredits(double credits) {
+    // made all inherited methods final because they are the implementations
+    // that i want everyone who makes child classes to use, so they do not
+    // write their own methods, for consistency and easier debugging
+    
+    public final void setCredits(double credits) {
         if(credits < 0.5 || credits > 4.0) {
             JOptionPane.showMessageDialog(null,
                     "Error: credits must be in the range 0.5 to 4.0");
@@ -41,11 +45,11 @@ public abstract class ProgrammingCourse {
         this.credits = credits;
     }
     
-    public double getCredits() {
+    public final double getCredits() {
         return credits;
     }
     
-    public String getCourseName() {
+    public final String getCourseName() {
         return courseName;
     }
 
@@ -58,7 +62,7 @@ public abstract class ProgrammingCourse {
         this.courseName = courseName;
     }
 
-    public String getCourseNumber() {
+    public final String getCourseNumber() {
         return courseNumber;
     }
 
